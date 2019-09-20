@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+archivesBaseName = 'spring-mvc-study'
+group = 'study.mvc'
+version = '1.0'
+
+def version = [
+        spring: '4.3.3.RELEASE'
+]
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories  {
+    jcenter()
+}
+
+dependencies {
+    compile "org.springframework:spring-web:${version.spring}"
+    testCompile "org.junit.jupiter:junit-jupiter-api:5.5.2"
+}

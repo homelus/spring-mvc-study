@@ -1,0 +1,12 @@
+# Java Files
+*.class
+# Package file
+*.jar
+*.war
+*.ear
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+target/
