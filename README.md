@@ -1,2 +1,5 @@
 # spring-mvc-study
-Spring MVC Study (learning DispatcherServlet initialization &amp; service process)
+
+## Learning DispatcherServlet initialization & service process
+
+Spring Version: 4.3.3
