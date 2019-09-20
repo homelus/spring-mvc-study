@@ -1,12 +1,33 @@
-# Java Files
-*.class
-# Package file
-*.jar
-*.war
-*.ear
-# Intellij project files
+.DS_Store
+
+### build ###
+/target/
+/tomcat.8080/
+
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
 *.ipr
-*.iws
-.idea/
-target/
+out/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
