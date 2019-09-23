@@ -2,6 +2,8 @@
 
 참조: [Spring MVC Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-servlet)
 
+> **규칙** 
+> <br>
 > 번역 시 **도구**를 사용해 자유롭게 **중요한 부분**을 표시할 수 있습니다.<br>
 > <br>
 > **제목**에 **원문**을 링크합니다.  
