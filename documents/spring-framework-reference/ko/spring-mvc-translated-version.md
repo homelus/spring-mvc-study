@@ -1,4 +1,4 @@
-## 본 문서는 스프링이 제공하는 Spring MVC Documentation 의 한국어 번역본 입니다.
+## 본 문서는 스프링이 제공하는 Spring MVC Documentation 의 번역본 입니다.
 
 참조: [Spring MVC Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-servlet)
 
