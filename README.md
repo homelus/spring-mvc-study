@@ -7,9 +7,9 @@
 
 #### [스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)
 
-#### Study Curriculum
+### Study Curriculum
 
-##### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-Initiation.md)
+#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-Initiation.md)
 
 ###### Servlet 의 초기화
 
@@ -21,7 +21,7 @@
     - BeanPostProcessor 등록: PostProcessorRegistrationDelegate:registerBeanPostProcessors()
     - SingletonBean (전처리)미리 등록: DefaultListableBeanFactory:preInstantiateSingletons()
     
-##### [웹 요청의 처리 과정](documents/description/DispatcherServlet-Processing.md)
+#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-Processing.md)
 
 ###### 
 
