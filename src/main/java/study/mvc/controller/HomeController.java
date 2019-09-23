@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @since 2019 09 20
  */
 @Controller
-public class UserController {
+public class HomeController {
 
-    private final static Logger logger = LoggerFactory.getLogger(UserController.class);
+    private final static Logger logger = LoggerFactory.getLogger(HomeController.class);
 
-    public UserController() {
+    public HomeController() {
         logger.info("user controller instantiate");
     }
 

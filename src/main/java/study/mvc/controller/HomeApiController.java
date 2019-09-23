@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2019 09 23
  */
 @RestController
-public class UserApiController {
+public class HomeApiController {
 
-    private final static Logger logger = LoggerFactory.getLogger(UserApiController.class);
+    private final static Logger logger = LoggerFactory.getLogger(HomeApiController.class);
 
-    public UserApiController() {
+    public HomeApiController() {
         logger.info("user api controller instantiate");
     }
 
