@@ -13,6 +13,22 @@ DefaultHandlerExceptionResolver
 
 InternalResourceViewResolver
 
+#### LocaleResolver
+
+AcceptHeaderLocaleResolver
+
+#### ThemeResolver
+
+FixedThemeResolver
+
+#### FlashMapManager
+
+SessionFlashMapMAnager
+
+#### ViewNameTranslator
+
+DefaultRequestToViewNameTranslator
+
 ### DispatcherServlet 기본 설정
 
 #### HandlerMappings

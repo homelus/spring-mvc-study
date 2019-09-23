@@ -1,0 +1,20 @@
+### BeanPostProcessor
+
+ApplicationContextAwareProcessor
+ServletContextAwareProcessor
+PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor
+ConfigurationClassPostProcessor$EnhancedConfigurationBeanPostProcessor
+CommonAnnotationBeanPostProcessor
+AutowiredAnnotationBeanPostProcessor
+RequiredAnnotationBeanPostProcessor
+PostProcessorRegistrationDelegate$ApplicationListenerDetector
+
+### SCOPE
+
+request: RequestScope
+session: SessionScope
+globalSession: SessionScope
+application: ServletContextScope
+
+
