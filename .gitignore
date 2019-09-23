@@ -3,6 +3,7 @@
 ### build ###
 /target/
 /tomcat.8080/
+tomcat.*
 
 .gradle
 /build/

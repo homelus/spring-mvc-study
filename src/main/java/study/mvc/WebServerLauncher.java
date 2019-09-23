@@ -22,6 +22,7 @@ public class WebServerLauncher {
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(8888);
         tomcat.addWebapp("/", webappPath);
+        tomcat.setSilent(true);
         logger.info("server start, webapp path: {}", webappPath);
 
         tomcat.start();
