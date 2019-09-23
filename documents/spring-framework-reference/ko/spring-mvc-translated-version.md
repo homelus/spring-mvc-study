@@ -2,6 +2,9 @@
 
 참조: [Spring MVC Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-servlet)
 
+> 번역 시 강조와 색 등 도구를 사용해 자유롭게 중요한 부분을 표시합니다.<br>
+> 반드시 제목에 원문을 링크합니다.  
+
 ### 1.1. [DispatcherServlet](DispatcherServlet/1.1%20DispatcherServlet.md)
 
 #### 1.1.1. [Context Hierarchy](DispatcherServlet/1.1.1.%20Context%20Hierarchy)
@@ -16,7 +19,3 @@
 #### 1.1.10. [Themes](DispatcherServlet/1.1.10.%20Themes)
 #### 1.1.11. [Multipart Resolver](DispatcherServlet/1.1.11.%20Multipart%20Resolver)
 #### 1.1.12. [Logging](DispatcherServlet/1.1.12.%20Logging)
-
-
-> 번역 시 강조와 색 등 도구를 사용해 자유롭게 중요한 부분을 표시합니다.
-> 반드시 제목에 원문을 링크합니다.  
