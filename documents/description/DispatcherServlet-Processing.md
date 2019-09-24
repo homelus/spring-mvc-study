@@ -2,7 +2,7 @@
 
 <hr>
 
-![dispatcher-servlet-processing](DispatcherServlet-Processing.PNG)
+![dispatcher-servlet-processing](img/DispatcherServlet-Processing.PNG)
 
 #### HandlerMapping
 
@@ -12,7 +12,7 @@
 
 #### ArgumentResolver
 
-#### Controller
+#### Controller**
 
 #### ReturnValueHandler
 
