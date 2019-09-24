@@ -2,11 +2,11 @@
 
 ### build ###
 /target/
-/tomcat.8080/
 tomcat.*
 
+### Gradle ###
 .gradle
-/build/
+build/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -27,7 +27,6 @@ out/
 
 ### NetBeans ###
 nbproject/private/
-build/
 nbbuild/
 dist/
 nbdist/
