@@ -1,5 +1,7 @@
 ### 단계 별 프로세스
 
+<hr>
+
 1. 빈팩토리 생성
  - AnnotationConfigWebApplicationContext#loadBeanDefinition()
     - AnnotationConfigUtils#registerAnnotationConfigProcessors()
