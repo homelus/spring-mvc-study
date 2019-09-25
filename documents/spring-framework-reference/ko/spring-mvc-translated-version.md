@@ -24,4 +24,4 @@
 #### 　　1.1.9. [Locale](DispatcherServlet/1.1.9.%20Locale)
 #### 　　1.1.10. [Themes](DispatcherServlet/1.1.10.%20Themes)
 #### 　　1.1.11. [Multipart Resolver](DispatcherServlet/1.1.11.%20Multipart%20Resolver)
-#### 　　1.1.12. [Logging](DispatcherServlet/1.1.12.%20Logging)
+#### 　　1.1.12. [Logging](DispatcherServlet/1.1.12.%20Logging.md)
