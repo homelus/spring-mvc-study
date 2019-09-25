@@ -1,5 +1,8 @@
 ### 단계 별 프로세스
 
+> **Singleton Bean** 등록 표시: *SB #*<br>
+> **BeanDefinition** 등록 표시: *BD #*
+
 <hr>
 
 1. 빈팩토리 생성
