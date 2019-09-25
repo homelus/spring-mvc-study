@@ -1,4 +1,14 @@
-### 단계 별 프로세스
+## BeanFactory 생성 및 초기화 단계 별 프로세스
+<br>
+
+> **Singleton Bean** 등록 표시: *SB #*<br>
+> **BeanDefinition** 등록 표시: *BD #*
+
+<hr>
+
+### AbstractApplicationContext Class 의 refresh() 메서드를 통해 BeanFactory 를 생성하고 초기화한다.
+
+<br>
 
 1. 빈팩토리 생성
  - AnnotationConfigWebApplicationContext#loadBeanDefinition()
