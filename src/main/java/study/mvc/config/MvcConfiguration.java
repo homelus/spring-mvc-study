@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
  * @since 2019 09 20
  */
 @Configuration
-@ComponentScan("study.mvc")
+@ComponentScan("study")
 @ImportResource("classpath:mvc-config.xml")
 public class MvcConfiguration {
 
