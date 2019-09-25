@@ -11,6 +11,8 @@
 
 #### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-Initiation.md)
 
+#### [BeanFactory 의 초기화 과정](documents/description/BeanFactory-Initiation.md)
+
 ###### Servlet 의 초기화
 
 ###### DispatcherServlet 의 상속구조
