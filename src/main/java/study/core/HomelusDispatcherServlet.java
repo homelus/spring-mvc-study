@@ -34,7 +34,7 @@ public class HomelusDispatcherServlet extends FrameworkServlet {
 
     @Override
     protected void doService(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
+        doDispatch(request, response);
     }
 
     protected void doDispatch(HttpServletRequest request, HttpServletResponse response) throws Exception {
