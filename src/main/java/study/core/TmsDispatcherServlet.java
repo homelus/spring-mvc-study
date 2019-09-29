@@ -22,7 +22,7 @@ import static java.util.Objects.requireNonNull;
  * @author playjun
  * @since 2019 09 26
  */
-public class HomelusDispatcherServlet extends FrameworkServlet {
+public class TmsDispatcherServlet extends FrameworkServlet {
 
     private LocaleResolver localeResolver;
 

@@ -1,6 +1,6 @@
 package study.core.annotation;
 
-public @interface HomelusAttribute {
+public @interface TmsAttribute {
 
     String value() default "";
 

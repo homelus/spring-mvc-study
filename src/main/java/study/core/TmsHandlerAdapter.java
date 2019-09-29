@@ -47,7 +47,7 @@ import java.util.Set;
  * @author playjun
  * @since 2019 09 27
  */
-public class HomelusHandlerAdapter extends AbstractHandlerMethodAdapter {
+public class TmsHandlerAdapter extends AbstractHandlerMethodAdapter {
 
     private HandlerMethodArgumentResolverComposite argumentResolvers;
 

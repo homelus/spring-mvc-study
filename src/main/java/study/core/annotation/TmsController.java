@@ -16,5 +16,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Component
-public @interface HomelusController {
+public @interface TmsController {
 }

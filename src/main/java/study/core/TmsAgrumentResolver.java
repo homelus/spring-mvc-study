@@ -6,12 +6,12 @@ import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
-import study.core.annotation.HomelusAttribute;
+import study.core.annotation.TmsAttribute;
 
-public class HomelusAgrumentResolver implements HandlerMethodArgumentResolver {
+public class TmsAgrumentResolver implements HandlerMethodArgumentResolver {
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
-        HomelusAttribute ann = parameter.getMethodAnnotation(HomelusAttribute.class);
+        TmsAttribute ann = parameter.getMethodAnnotation(TmsAttribute.class);
         return ann != null && !StringUtils.isEmpty(ann.value());
     }
 

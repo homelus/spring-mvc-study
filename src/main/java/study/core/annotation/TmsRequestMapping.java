@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Mapping
-public @interface HomelusRequestMapping {
+public @interface TmsRequestMapping {
 
     @AliasFor("path")
     String[] value() default {};
