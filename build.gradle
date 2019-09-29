@@ -26,6 +26,9 @@ dependencies {
     // spring
     implementation "org.springframework:spring-webmvc:${version.spring}"
 
+    // commons
+    implementation "org.apache.commons:commons-lang3:3.9"
+
     // etc
     implementation "ch.qos.logback:logback-classic:1.2.3"
 

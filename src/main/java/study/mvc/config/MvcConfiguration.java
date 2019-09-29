@@ -3,6 +3,11 @@ package study.mvc.config;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.web.method.support.HandlerMethodArgumentResolver;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+import study.core.TmsTypeArgumentResolver;
+
+import java.util.List;
 
 /**
  * @author playjun
@@ -12,6 +17,7 @@ import org.springframework.context.annotation.ImportResource;
 @ComponentScan("study")
 @ImportResource("classpath:mvc-config.xml")
 public class MvcConfiguration {
+
 
 }
 
