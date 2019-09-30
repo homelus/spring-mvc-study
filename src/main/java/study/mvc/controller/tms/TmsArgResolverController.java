@@ -15,14 +15,12 @@ import study.mvc.model.TmsType;
  * @author playjun
  * @since 2019 09 25
  */
-@Component
 @TmsController
 @ResponseBody
-public class TmsApiController {
+public class TmsArgResolverController {
 
     @TmsRequestMapping("/api/tmsLevel")
     public String helloJun(@TmsLevelAttribute TmsLevel level, @TmsTypeAttribute TmsType type) {
-
         return "Hello. user level: " + level.name() + ", user type: " + type.name();
     }
 
