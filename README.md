@@ -36,4 +36,4 @@
 ##### [RequestMappingHandlerAdapter](documents/class-config/RequestMappingHandlerAdapter-config.md)
 
 ### 스터디 진도
-#### [첫번째 모임](documents/2019-10-1-SpringMVC-why)
+#### [첫번째 모임](documents/time-topic/2019-10-1-SpringMVC-why)
