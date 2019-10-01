@@ -5,7 +5,7 @@
 ##### Spring Version: 4.3.3
 ##### Build tool: Gradle
 
-#### [스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)
+#### *[스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)*
 
 ### Study Curriculum
 
