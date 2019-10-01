@@ -10,9 +10,12 @@
 - FrameworkServlet#initWebApplicationContext()
 - FrameworkServlet#createWebApplicationContext()
     - BeanUtils.instantiateClass(contextClass) : ApplicationContext 생성
-- 
-
-
+- FrameworkServlet#configureAndRefreshWebApplicationContext()
+    - wac.refresh() : BeanFactory 생성 및 초기화
+- AbstractApplicationContext#refresh()
+- AbstractRefreshableApplicationContext#refreshBeanFactory()
+    - createBeanFactory() : 빈 팩토리 생성
+    - loadBeanDefinitions() : 빈 정의 로딩
 
 ##### 서비스 실행 중
 
