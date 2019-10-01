@@ -1,5 +1,21 @@
 ### 첫번째 모임
 
+#### Spring MVC 디버깅 순서
+
+##### 초기화
+
+- GenericServlet#init()
+- HttpServlet#init()
+- FrameworkServlet#initServletBean()
+- FrameworkServlet#initWebApplicationContext()
+- FrameworkServlet#createWebApplicationContext()
+    - BeanUtils.instantiateClass(contextClass) : ApplicationContext 생성
+- 
+
+
+
+##### 서비스 실행 중
+
 #### Spring MVC 를 공부해야하는 이유
 
 ##### 실무적으로 바라볼 때 
