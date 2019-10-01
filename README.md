@@ -1,4 +1,4 @@
-# Spring MVCStudy
+# Spring MVC Study
 
 ## :book: Learning DispatcherServlet initialization & service process
 
