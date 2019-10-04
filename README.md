@@ -1,11 +1,11 @@
-# Spring-MVC-study
+# Spring MVC Study
 
-## Learning DispatcherServlet initialization & service process
+## :book: Learning DispatcherServlet initialization & service process
 
 ##### Spring Version: 4.3.3
 ##### Build tool: Gradle
 
-#### [스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)
+#### *[스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)*
 
 ### Study Curriculum
 
@@ -34,3 +34,6 @@
 ##### [BeanFactory](documents/class-config/BeanFactory-config.md)
 ##### [RequestMappingHandlerMapping](documents/class-config/RequestMappingHandlerMapping-config.md)
 ##### [RequestMappingHandlerAdapter](documents/class-config/RequestMappingHandlerAdapter-config.md)
+
+### 스터디 진도
+#### [첫번째 모임](documents/time-topic/2019-10-1-SpringMVC-why.md)
