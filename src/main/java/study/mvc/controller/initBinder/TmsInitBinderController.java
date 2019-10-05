@@ -2,20 +2,22 @@ package study.mvc.controller.initBinder;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.format.Formatter;
+import org.springframework.format.datetime.DateFormatter;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import study.mvc.model.TmsUser;
 
 import java.beans.PropertyEditorSupport;
+import java.text.ParseException;
+import java.util.Date;
+import java.util.Locale;
 
-@Controller
-@ResponseBody
+@RestController
 public class TmsInitBinderController {
 
     private final static Logger logger = LoggerFactory.getLogger(TmsInitBinderController.class);
@@ -28,11 +30,15 @@ public class TmsInitBinderController {
     public void initBinder(WebDataBinder dataBinder) {
         dataBinder.addValidators(new TmsValidator());
         dataBinder.registerCustomEditor(TmsUser.class, new TmsEditor());
+
+        DateFormatter dateFormatter = new DateFormatter();
+        dateFormatter.setPattern("yyyy-MM-dd");
+        dataBinder.addCustomFormatter(dateFormatter, "startDate");
     }
 
     @RequestMapping("/api/ib/tmsUser")
-    public String tmsUser(/*String title,*/
-                          @Validated TmsUser tmsName) {
+    public String tmsUser(@Validated TmsUser tmsName, @RequestParam("startDate") Date startDate) {
+        System.out.println(startDate.toString());
         return tmsName.toString();
     }
 
