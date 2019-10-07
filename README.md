@@ -9,9 +9,9 @@
 
 ### Study Curriculum
 
-#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-Initiation.md)
+#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
 
-#### [BeanFactory 의 초기화 과정](documents/description/BeanFactory-Initiation.md)
+#### [BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
 
 ###### Servlet 의 초기화
 
@@ -23,7 +23,7 @@
     - BeanPostProcessor 등록: PostProcessorRegistrationDelegate:registerBeanPostProcessors()
     - SingletonBean (전처리)미리 등록: DefaultListableBeanFactory:preInstantiateSingletons()
     
-#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-Processing.md)
+#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
 
 ###### 
 
