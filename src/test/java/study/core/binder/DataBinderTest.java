@@ -3,7 +3,10 @@ package study.core.binder;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.validation.DataBinder;
+import study.core.Type;
 import study.core.WebUser;
+
+import java.beans.PropertyEditorSupport;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -43,6 +46,27 @@ class DataBinderTest {
 
         assertThat(privateUser.getId()).isEqualTo("orion");
         assertThat(privateUser.getName()).isEqualTo(null);
+    }
+
+    @Test
+    void convertTest() {
+        WebUser webUser = new WebUser();
+        DataBinder binder = new DataBinder(webUser);
+        binder.registerCustomEditor(Type.class, new PropertyEditorSupport() {
+            @Override
+            public void setValue(Object value) {
+                super.setValue(Type.convert((int) value));
+            }
+        });
+
+        MutablePropertyValues mpvs = new MutablePropertyValues();
+        mpvs.add("id", "orion");
+        mpvs.add("type", 1);
+
+        binder.bind(mpvs);
+
+        assertThat(webUser.getType()).isEqualTo(Type.A);
+        assertThat(webUser.getId()).isEqualTo("orion");
     }
 
     private static class PrivateUser {
