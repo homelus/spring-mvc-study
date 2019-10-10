@@ -2,17 +2,17 @@ package study.mvc.model;
 
 import java.util.StringJoiner;
 
-public class TmsName {
+public class TmsUser {
 
     private String name;
-    private String title;
+    private String id;
 
-    public String getTitle() {
-        return title;
+    public String getId() {
+        return id;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -23,11 +23,15 @@ public class TmsName {
         this.name = name;
     }
 
+    public boolean startWithTms() {
+        return name.startsWith("tms");
+    }
+
     @Override
     public String toString() {
-        return new StringJoiner(", ", TmsName.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", TmsUser.class.getSimpleName() + "[", "]")
                 .add("name='" + name + "'")
-                .add("title='" + title + "'")
+                .add("id='" + id + "'")
                 .toString();
     }
 }
