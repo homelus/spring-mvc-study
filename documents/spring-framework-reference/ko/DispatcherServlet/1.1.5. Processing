@@ -23,7 +23,31 @@ Multiparts 가 발견되면, 해당 request 는 MultipartHttpServletRequest 로 
 요청 처리 과정 내에 있는 다른 요소들에 의해 이후에 처리되기 위함이다.
 
 5
-적합한 핸들러가 검색된다. 
-핸들러를 찾으면, 핸들러와 연관된 로직이 실행된다.
+적합한 handler 가 검색된다. 
+Handler 를 찾으면, Model 또는 랜더링을 준비하기 위해서, handler 와 연관된 execution chain 이 실행된다. 
+( execution chain 에는 preprocessors, post processors, controllers 가 있다. )
+대신, Annotate 된 controllers 들에게는, view 를 반환하는 대신, HandlerAdapter 안에 response 가 전달된다.
 
-[작성중...]
+6
+Model 이 반환되면, view 가 그려진다. 
+Model 이 반환되지 않거나 ( 이런 경우는 request 에 끼여드는 preprocessor 나 postprocessor 때문일 것이다. 아마 보안상 이유 때문일 것이다. )
+View 가 그려지지 않는다면,
+Request 가 이미 수행을 끝냈기 때문이다.
+
+
+
+WebApplicationContext 에 선언된 HandlerExceptionResolver 빈들은
+Request 가 처리되는 동안 발생된 exception 들을 resolve 하기 위해서 사용한다.
+이런 exception resolver 들은 exception 들을 설명하기 위해서 로직을 커스터마이징할 수 있게 한다.
+Exception 에 대해 더 알고 싶다면 1.1.7. Exceptions 를 참고하자.
+
+스프링 DispatcherServlet 은, Servlet API 에 명시된 것 처럼, last-modification-date 반환하도록 지원한다.
+특정 request 에 대한 last modification date 를 결정하는 처리 과정은 간단하다(?) : 
+DispatcherServlet 은 적절한 handler mapping 을 찾고, 찾아진 handler 가 LastModified 인터페이스를 구현하는지 여부를 테스트한다. 
+handler 가 LastModified 인터페이스를 구현하고 있다면, 
+LastModified 인터페이스의 long getLastModified(request) 메소드의 값을 client 에게 반환한다.
+
+우리는, web.xml 파일 안에 servlet 선언부에 servlet initialization 파라미터들 ( init-params elements) 을 추가해서, 
+개별 DispatcherServlet 인스턴스들을 커스터마이징할 수 있다. 
+아래 테이블은 지원하는 파라미터들을 열거한다.
+
