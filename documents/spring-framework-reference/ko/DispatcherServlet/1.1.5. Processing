@@ -49,16 +49,33 @@ LastModified 인터페이스의 long getLastModified(request) 메소드의 값�
 
 우리는, web.xml 파일 안에 servlet 선언부에 servlet initialization 파라미터들 ( init-params elements) 을 추가해서, 
 개별 DispatcherServlet 인스턴스들을 커스터마이징할 수 있다. 
-아래 테이블은 지원하는 파라미터들을 열거한다.
-
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
 
 
-| 파라미터 | 설명 |
-| --- | --- |
-| `contextClass` | ConfigurableWebApplicationContext 를 구현하는 클래스. 인스턴스화되고, 해당 servlet 에 의해 지역적으로 설정된다. 기본적으로 XmlWebApplicationContext 를 사용한다. |
-| `contextConfigLocation` | Context 인스턴스로 전달되는 string. contextClass 에 의해 결정된다. Context 들을 찾을 수 있는 곳을 나타낸다. string 은 multiple context 들을 지원하기 위해서, ',' 를 구분자로 사용하는 multiple string 들로 구성될 수 있다. 
-두 번 정의된 빈들이 있는 multiple context locations 의 경우, 가장 뒤에 location 이 먼저 채택된다. |
+다음은 지원하는 파라미터들이다.
+
+contextClass : 
+ConfigurableWebApplicationContext 를 구현하는 클래스. 
+인스턴스화되고, 해당 servlet 에 의해 지역적으로 설정된다. 
+기본적으로 XmlWebApplicationContext 를 사용한다.
+
+contextConfigLocation : 
+Context 인스턴스로 전달되는 string.
+( contextClass 에 의해 결정된다. )
+Context 들을 찾을 수 있는 곳을 나타낸다. 
+string 은 multiple context 들을 지원하기 위해서, ( , 를 구분자로 사용하는 ) multiple string 들로 구성될 수 있다. 
+두 번 정의된 빈들이 있는 multiple context locations 의 경우, 가장 뒤에 location 이 먼저 채택된다.
+
+namespace : 
+WebApplicationContext 의 명칭 공간.
+기본적으로 [servlet 이름]-servlet 이다.
+
+throwExceptionIfNoHandlerFound : 
+Request 에 대한 handler 를 못 찾으면, NoHandlerFoundException 을 던질지 여부.
+이 exception 은 ( 예를 들어, @ExceptionHandler controller method 를 사용해서 ) HandlerExceptionResolver 로 잡을 수 있다.
+그리고 다른 것들과 마찬가지로 handle 된다.
+DispatcherServlet 이, exception 을 발생시키지 않고, response status 를 404 (NOT_FOUND) 로 설정하는 경우에, 기본적으로 false 로 설정된다. 
+
+참고 : default servlet handling 이 설정되어 있다면,
+해결되지 않은 request 들은 항상 1.11.11. Default Servlet 으로 전달되고, 404 는 절대 발생하지 않는다.
+
+[끝]
