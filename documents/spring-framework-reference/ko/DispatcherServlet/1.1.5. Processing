@@ -51,6 +51,12 @@ LastModified 인터페이스의 long getLastModified(request) 메소드의 값�
 개별 DispatcherServlet 인스턴스들을 커스터마이징할 수 있다. 
 아래 테이블은 지원하는 파라미터들을 열거한다.
 
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
+
 | 파라미터 | 설명 |
 | --- | --- |
 | `contextClass` | ConfigurableWebApplicationContext 를 구현하는 클래스. 인스턴스화되고, 해당 servlet 에 의해 지역적으로 설정된다. 기본적으로 XmlWebApplicationContext 를 사용한다. |
