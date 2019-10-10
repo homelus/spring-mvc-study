@@ -53,6 +53,6 @@ LastModified 인터페이스의 long getLastModified(request) 메소드의 값�
 
 | 파라미터 | 설명 |
 | --- | --- |
-| contextClass | ConfigurableWebApplicationContext 를 구현하는 클래스. 인스턴스화되고, 해당 servlet 에 의해 지역적으로 설정된다. 기본적으로 XmlWebApplicationContext 를 사용한다. |
-| contextConfigLocation | Context 인스턴스로 전달되는 string. contextClass 에 의해 결정된다. Context 들을 찾을 수 있는 곳을 나타낸다. string 은 multiple context 들을 지원하기 위해서, ',' 를 구분자로 사용하는 multiple string 들로 구성될 수 있다. 
+| `contextClass` | ConfigurableWebApplicationContext 를 구현하는 클래스. 인스턴스화되고, 해당 servlet 에 의해 지역적으로 설정된다. 기본적으로 XmlWebApplicationContext 를 사용한다. |
+| `contextConfigLocation` | Context 인스턴스로 전달되는 string. contextClass 에 의해 결정된다. Context 들을 찾을 수 있는 곳을 나타낸다. string 은 multiple context 들을 지원하기 위해서, ',' 를 구분자로 사용하는 multiple string 들로 구성될 수 있다. 
 두 번 정의된 빈들이 있는 multiple context locations 의 경우, 가장 뒤에 location 이 먼저 채택된다. |
