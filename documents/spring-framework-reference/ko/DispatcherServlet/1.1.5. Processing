@@ -4,7 +4,7 @@ DispatcherServlet 은 request 들을 다음과 같이 처리한다.
 
 1
 WebApplicationContext 가 검색되고, 
-요청 처리 과정에 있는 Controller 와 다른 요소들이 사용할 수 있는 속성으로 해당 request 에 연결된다. 
+WebApplicationContext 는 요청 처리 과정에 있는 Controller 와 다른 요소들이 사용할 수 있는 속성으로 해당 request 에 연결된다. 
 WebApplicationContext 는 기본적으로 DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE 키로 연결된다.  
 
 2
