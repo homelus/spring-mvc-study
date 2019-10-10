@@ -1,0 +1,29 @@
+1.1.5. Processing
+
+DispatcherServlet 은 request 들을 다음과 같이 처리한다.
+
+1
+WebApplicationContext 가 검색되고, 
+요청 처리 과정에 있는 Controller 와 다른 요소들이 사용할 수 있는 속성으로 해당 request 에 연결된다. 
+WebApplicationContext 는 기본적으로 DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE 키로 연결된다.  
+
+2
+Locale resolver 가 해당 request 에 연결된다. 
+요청 처리 과정에 있는 요소들이 해당 request 를 처리할 때 사용할 locale 을 resolve 하게 하기 위함이다.
+Request 에는 ‘뷰 렌더링’, ‘데이터 준비’ 등이 있다. 
+
+3
+Theme resolver 가 해당 request 에 연결된다.
+ View 와 같은 요소들이 어떤 theme 을 사용해야할지 결정하도록 하기 위함이다.
+만약 theme 을 사용하지 않는다면, 이 부분은 무시해도 된다.
+
+4
+Multipart file resolver 를 명시한다면, 해당 request 는 multipart 들에 대해 검사를 받는다. 
+Multiparts 가 발견되면, 해당 request 는 MultipartHttpServletRequest 로 감싸진다. 
+요청 처리 과정 내에 있는 다른 요소들에 의해 이후에 처리되기 위함이다.
+
+5
+적합한 핸들러가 검색된다. 
+핸들러를 찾으면, 핸들러와 연관된 로직이 실행된다.
+
+[작성중...]
