@@ -1,0 +1,13 @@
+1.1.3. Web MVC Config
+
+어플리케이션들은 infrastructure bean 들을 선언할 수 있다. 
+Infrastructure bean 들은 Special Bean Types 에 열거되어 있다. 
+Special Bean Types 은 요청들을 처리하기 위해 필요하다. 
+DispatcherServlet 은 각 Special Bean 을 찾기 위해 WebApplicationContext 를 확인한다.
+WebApplicationContext 에 매치되는 Bean Types 가 없으면, DispatcherServlet.properties 에 열거되어 있는 default types 를 내려준다. 
+
+대부분의 경우, MVC Config 는 최고의 출발점이다. MVC Config 는 Java 나 XML 에서 필요로하는 bean 들을 선언한다. 
+그리고 MVC Config 는 높은 수준의 configuration callback API 를 제공한다. 
+configuration callback API 는 MVC Config 를 커스터마이징 한다.
+
+Spring Boot 는 Spring MVC 를 구성하기 위해서 MVC Java Configuration 에 의존한다. 그리고 많은 부가적인 편리한 옵션들을 제공한다.
