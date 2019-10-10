@@ -20,7 +20,6 @@ repositories {
         url "http://jcenter.bintray.com"
     }
 }
-
 dependencies {
     // servlet
     implementation "javax.servlet:jstl:1.2"
@@ -29,8 +28,12 @@ dependencies {
     // spring
     implementation "org.springframework:spring-webmvc:${version.spring}"
 
+    // commons
+    implementation "org.apache.commons:commons-lang3:3.9"
+
     // etc
     implementation "ch.qos.logback:logback-classic:1.2.3"
+    implementation "org.projectlombok:lombok:1.18.10"
 
     // tomcat
     implementation "org.apache.tomcat.embed:tomcat-embed-core:${version.tomcat}"
@@ -39,4 +42,7 @@ dependencies {
 
     testImplementation "org.junit.jupiter:junit-jupiter:5.5.2"
     testImplementation "org.assertj:assertj-core:3.12.2"
+    testImplementation "org.springframework:spring-test:4.3.3.RELEASE"
+
 }
+

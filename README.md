@@ -1,15 +1,17 @@
-# Spring-MVC-study
+# Spring MVC Study
 
-## Learning DispatcherServlet initialization & service process
+## :book: Learning DispatcherServlet initialization & service process
 
 ##### Spring Version: 4.3.3
 ##### Build tool: Gradle
 
-#### [스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)
+#### *[스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)*
 
 ### Study Curriculum
 
-#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-Initiation.md)
+#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
+
+#### [BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
 
 ###### Servlet 의 초기화
 
@@ -21,7 +23,7 @@
     - BeanPostProcessor 등록: PostProcessorRegistrationDelegate:registerBeanPostProcessors()
     - SingletonBean (전처리)미리 등록: DefaultListableBeanFactory:preInstantiateSingletons()
     
-#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-Processing.md)
+#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
 
 ###### 
 
@@ -32,3 +34,6 @@
 ##### [BeanFactory](documents/class-config/BeanFactory-config.md)
 ##### [RequestMappingHandlerMapping](documents/class-config/RequestMappingHandlerMapping-config.md)
 ##### [RequestMappingHandlerAdapter](documents/class-config/RequestMappingHandlerAdapter-config.md)
+
+### 스터디 진도
+#### [첫번째 모임](documents/time-topic/2019-10-1-SpringMVC-why.md)
