@@ -42,7 +42,7 @@ Request 가 처리되는 동안 발생된 exception 들을 resolve 하기 위해
 Exception 에 대해 더 알고 싶다면 1.1.7. Exceptions 를 참고하자.
 
 스프링 DispatcherServlet 은, Servlet API 에 명시된 것 처럼, last-modification-date 반환하도록 지원한다.
-특정 request 에 대한 last modification date 를 결정하는 처리 과정은 간단하다(?) : 
+특정 request 에 대한 last modification date 를 결정하는 처리 과정은 간단하다 : 
 DispatcherServlet 은 적절한 handler mapping 을 찾고, 찾아진 handler 가 LastModified 인터페이스를 구현하는지 여부를 테스트한다. 
 handler 가 LastModified 인터페이스를 구현하고 있다면, 
 LastModified 인터페이스의 long getLastModified(request) 메소드의 값을 client 에게 반환한다.
