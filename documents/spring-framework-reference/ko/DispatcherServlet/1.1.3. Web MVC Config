@@ -11,3 +11,6 @@ WebApplicationContext 에 매치되는 Bean Types 가 없으면, DispatcherServl
 configuration callback API 는 MVC Config 를 커스터마이징 한다.
 
 Spring Boot 는 Spring MVC 를 구성하기 위해서 MVC Java Configuration 에 의존한다. 그리고 많은 부가적인 편리한 옵션들을 제공한다.
+
+
+[끝]
