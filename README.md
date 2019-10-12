@@ -9,9 +9,9 @@
 
 ### Study Curriculum
 
-#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-Initiation.md)
+#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
 
-#### [BeanFactory 의 초기화 과정](documents/description/BeanFactory-Initiation.md)
+#### [BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
 
 ###### Servlet 의 초기화
 
@@ -23,7 +23,7 @@
     - BeanPostProcessor 등록: PostProcessorRegistrationDelegate:registerBeanPostProcessors()
     - SingletonBean (전처리)미리 등록: DefaultListableBeanFactory:preInstantiateSingletons()
     
-#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-Processing.md)
+#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
 
 ###### 
 
@@ -36,4 +36,8 @@
 ##### [RequestMappingHandlerAdapter](documents/class-config/RequestMappingHandlerAdapter-config.md)
 
 ### 스터디 진도
-#### [첫번째 모임](documents/time-topic/2019-10-1-SpringMVC-why.md)
+#### [사전 모임](documents/time-topic/2019-09-26-Pre_metting.md)
+#### [첫번째 모임](documents/time-topic/2019-10-01-Why.md)
+#### [두번째 모임](documents/time-topic/2019-10-08-What.md)
+#### [세번째 모임](documents/time-topic/2019-10-10-doDispatch.md)
+
