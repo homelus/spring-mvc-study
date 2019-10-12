@@ -29,14 +29,11 @@ public class WebDataBinderTest {
         ConfigurableWebBindingInitializer configurableWebBindingInitializer = new ConfigurableWebBindingInitializer();
         configurableWebBindingInitializer.setConversionService(new DefaultFormattingConversionService());
         WebDataBinderFactory factory = new ServletRequestDataBinderFactory(new ArrayList<>(), configurableWebBindingInitializer);
-
-
         WebUser webUser = new WebUser();
         ServletRequestDataBinder binder = (ServletRequestDataBinder) factory.createBinder(webRequest, webUser, "user");
         binder.bind(mockRequest);
 
         assertThat(webUser.getName()).isEqualTo("jun");
-
     }
 
     private static class WebUser {
