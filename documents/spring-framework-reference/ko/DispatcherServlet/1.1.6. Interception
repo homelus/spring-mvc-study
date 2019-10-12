@@ -1,17 +1,26 @@
 ### 1.1.6. Interception
-All __HandlerMapping__ implementations support handler interceptors that are useful when you want to apply specific functionality to certain requests — for example, checking for a principal. Interceptors must implement __HandlerInterceptor__ from the __org.springframework.web.servlet__ package with three methods that should provide enough flexibility to do all kinds of pre-processing and post-processing:
+모든 __HandlerMapping__ 구현체는 특정한 요청에 특정 기능을 적용하려할 때 유용한 핸들러 인터셉터를 지원합니다.
+--예를 들어, 정확한 주체를 확인해봅시다.
+인터셉터는 반드시 __org.springframework.web.servlet__ 패키지 내에 있는 __HandlerInterceptor__ 를 3가지 메서드로 구현해야합니다.
+3가지 메서드는 모든 종류의 전처리 및 후처리를 수행 하기에 충분한 유연성을 제공해야합니다.
 
-- __preHandle(..)__: Before the actual handler is executed
+- __preHandle(..)__: 실제 핸들러가 실행되기 전
 
-- __postHandle(..)__: After the handler is executed
+- __postHandle(..)__: 핸들러가 실행된 이후
 
-- __afterCompletion(..)__: After the complete request has finished
+- __afterCompletion(..)__: 완전한 요청이 마무리 된 이후(view 생성 직후)
 
-The __preHandle(..)__ method returns a boolean value. You can use this method to break or continue the processing of the execution chain. When this method returns true, the handler execution chain continues. When it returns false, the __DispatcherServlet__ assumes the interceptor itself has taken care of requests (and, for example, rendered an appropriate view) and does not continue executing the other interceptors and the actual handler in the execution chain.
+__preHandle__ 는 boolean 값을 반환합니다. 이 메서드를 사용해 실행 체인(chain)의 처리를 중단하거나 계속할 수 있습니다.
+이 메서드가 true 값을 반환하면 핸들러 실행 체인은 계속 진행됩니다.
+이 메서드가 false 값을 반환하면 __DispatcherServlet__ 인터셉터가 스스로 요청을 처리했다고 가정합니다(예를 들어, 적절한 화면을 랜더링함).
+그리고 실행 체인(chain)에서 다른 인터셉터와 실제 핸들러를 실행하지 않습니다. 
 <br/>
 
-See [Interceptors](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-config-interceptors) in the section on MVC configuration for examples of how to configure interceptors. You can also register them directly by using setters on individual __HandlerMapping__ implementations.
+인터셉터 구성방법에 대해서는 MVC 구성 섹션의 [인터셉터](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-config-interceptors)를 참조하십시오.
+또한 개별 __HandlerMapping__ 구현에 대한 'setter'를 사용하여 'Interceptor'를 직접 등록할 수도 있습니다.
 <br/>
 
-Note that postHandle is less useful with __@ResponseBody__ and __ResponseEntity__ methods for which the response is written and committed within the __HandlerAdapter__ and before __postHandle__. That means it is too late to make any changes to the response, such as adding an extra header. For such scenarios, you can implement __ResponseBodyAdvice__ and either declare it as an [Controller Advice](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-controller-advice) bean or configure it directly on __RequestMappingHandlerAdapter__.
+__postHandle__  은 응답이 __HandlerAdapter__ 내부에서 그리고 __postHandle__ 전에 작성되고 커밋되는 __@ResponseBody__ 와 __ResponseEntity__ 메서드에서 덜 유용하다는 점을 유의해주십시오.
+즉, 응답을 변경하기에는 너무 늦었다는 뜻 입니다.
+별도의 헤더를 추가하는 등의 시나리오의 경우, __ResponseBodyAdvice__ 를 구현하고 이를 [Controller Advice Bean](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-controller-advice)으로 선언하거나 __RequestMappingHandlerAdapter__ 에서 직접 설정할 수 있습니다.
 <br/>
