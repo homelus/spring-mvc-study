@@ -14,7 +14,7 @@
 ### 1.1. [DispatcherServlet](DispatcherServlet/1.1%20DispatcherServlet.md)
 
 #### 　　1.1.1. [Context Hierarchy](DispatcherServlet/1.1.1.%20Context%20Hierarchy)
-#### 　　1.1.2. [Special Bean Types](DispatcherServlet/1.1.2.%20Special%20Bean%20Types.md) By DH
+#### 　　1.1.2. [Special Bean Types](DispatcherServlet/1.1.2.%20Special%20Bean%20Types) By DH
 #### 　　1.1.3. [Web MVC Config](DispatcherServlet/1.1.3.%20Web%20MVC%20Config) By IG
 #### 　　1.1.4. [Servlet Config](DispatcherServlet/1.1.4.%20Servlet%20Config) By GH
 #### 　　1.1.5. [Processing](DispatcherServlet/1.1.5.%20Processing)
