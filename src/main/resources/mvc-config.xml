@@ -3,18 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <mvc:annotation-driven/>
-<<<<<<< HEAD
-=======
-
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <bean class="study.mvc.interceptor.TestInterceptor" />
         </mvc:interceptor>
     </mvc:interceptors>
-<!--    <mvc:annotation-driven/>-->
->>>>>>> 120c8b22d297610f13686ff8731fd01d74cdc627
 
 <!--    <mvc:annotation-driven>-->
 <!--        <mvc:argument-resolvers>-->
