@@ -9,11 +9,11 @@
 
 ### Study Curriculum
 
-#### [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
+#### [:seedling:DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
 
-#### [BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
+#### [:herb:BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
 
-#### [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
+#### [:evergreen_tree:웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
 
 ###### Servlet 의 초기화
 
@@ -32,7 +32,7 @@
 ##### [RequestMappingHandlerMapping](documents/class-config/RequestMappingHandlerMapping-config.md)
 ##### [RequestMappingHandlerAdapter](documents/class-config/RequestMappingHandlerAdapter-config.md)
 
-### 스터디 진도
+### :musical_note: 스터디 진도
 #### [사전 모임](documents/time-topic/2019-09-26-Pre_metting.md)
 #### [첫번째 모임](documents/time-topic/2019-10-01-Why.md)
 #### [두번째 모임](documents/time-topic/2019-10-08-What.md)
