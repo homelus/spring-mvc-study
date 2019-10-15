@@ -1,16 +1,16 @@
-### 네번째 모임
+## 네번째 모임
 
-#### RequestMappingHandlerMapping (HandlerMapping)
+### RequestMappingHandlerMapping (HandlerMapping)
 
-##### 초기화
+#### 초기화
 
-###### ServletContextAware -> AbstractHandlerMapping#initApplicationContext()
+##### ServletContextAware -> AbstractHandlerMapping#initApplicationContext()
 
 1. detectMappedInterceptors : MappedInterceptor 를 조회한 빈을 검색하여 추가한다.
 
-###### InitializingBean -> RequestMappingHandlerMapping#afterPropertiesSet()
+##### InitializingBean -> RequestMappingHandlerMapping#afterPropertiesSet()
 
-###### AbstractHandlerMethodMapping#initHandlerMethods()
+##### AbstractHandlerMethodMapping#initHandlerMethods()
 1. 모든 빈 조회 후 **isHandler**(beanType) 으로 검색
     - RequestMappingHandlerMapping 의 재정의 메서드는 Controller 와 RequestMapping 애노테이션을 검사
 
@@ -22,9 +22,9 @@
     - 찾아낸 method 를 class(빈)과 같이 registry 에 담아둔다.
   
 
-##### 실행
+#### 실행
 
-###### getHandler()
+##### getHandler()
 
 1. Request 에서 검색 path 를 조회한다.
 
