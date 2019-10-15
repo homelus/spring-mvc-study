@@ -18,7 +18,7 @@ import java.util.List;
 @ComponentScan("study")
 @EnableWebMvc
 @ImportResource("classpath:mvc-config.xml")
-public class MvcConfiguration {
+public class MvcConfiguration extends WebMvcConfigurationSupport {
 
 
 }
