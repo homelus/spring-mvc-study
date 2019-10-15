@@ -10,7 +10,7 @@
 
 ###### InitializingBean -> RequestMappingHandlerMapping#afterPropertiesSet()
 
-####### AbstractHandlerMethodMapping#initHandlerMethods()
+###### AbstractHandlerMethodMapping#initHandlerMethods()
 1. 모든 빈 조회 후 **isHandler**(beanType) 으로 검색
     - RequestMappingHandlerMapping 의 재정의 메서드는 Controller 와 RequestMapping 애노테이션을 검사
 
