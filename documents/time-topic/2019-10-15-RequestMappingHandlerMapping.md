@@ -31,3 +31,4 @@
 2. 검색 RequestMappingInfo 를 키값으로 mappingRegistry 에서 HandlerMethod 를 조회한다.
  - path 를 이용해 urlLookUp 에서 검색한다.
  - 최적의 matching 된 handler 를 찾는다. 
+ - handler 와 interceptor 를 결합해 HandlerExecutorChain 으 만들어 반환한다
