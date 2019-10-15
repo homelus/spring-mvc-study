@@ -3,12 +3,10 @@ package study.mvc.config;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-import study.core.TmsTypeArgumentResolver;
-
-import java.util.List;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import study.mvc.interceptor.TestInterceptor;
 
 /**
  * @author playjun
@@ -18,8 +16,10 @@ import java.util.List;
 @ComponentScan("study")
 @EnableWebMvc
 @ImportResource("classpath:mvc-config.xml")
-public class MvcConfiguration {
-
-
+public class MvcConfiguration extends WebMvcConfigurerAdapter {
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new TestInterceptor());
+    }
 }
 

@@ -12,4 +12,11 @@
 <!--        </mvc:argument-resolvers>-->
 <!--    </mvc:annotation-driven>-->
 
+<!--    <mvc:interceptors>-->
+<!--        <mvc:interceptor>-->
+<!--            <mvc:mapping path="/**"/>-->
+<!--            <bean class="study.mvc.interceptor.TestInterceptor"/>-->
+<!--        </mvc:interceptor>-->
+<!--    </mvc:interceptors>-->
+
 </beans>
