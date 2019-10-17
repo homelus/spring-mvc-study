@@ -32,7 +32,7 @@
 ##### [RequestMappingHandlerMapping](documents/class-config/RequestMappingHandlerMapping-config.md)
 ##### [RequestMappingHandlerAdapter](documents/class-config/RequestMappingHandlerAdapter-config.md)
 
-### 스터디 진도
+### :bus: 스터디 진행 현황
 #### [사전 모임](documents/time-topic/2019-09-26-Pre_metting.md)
 #### [첫번째 모임: Spring MVC 를 왜 공부할까](documents/time-topic/2019-10-01-Why.md)
 #### [두번째 모임: Spring MVC 는 무엇일까](documents/time-topic/2019-10-08-What.md)
