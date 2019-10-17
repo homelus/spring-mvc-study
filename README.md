@@ -34,9 +34,9 @@
 
 ### 스터디 진도
 #### [사전 모임](documents/time-topic/2019-09-26-Pre_metting.md)
-#### [첫번째 모임](documents/time-topic/2019-10-01-Why.md)
-#### [두번째 모임](documents/time-topic/2019-10-08-What.md)
-#### [세번째 모임](documents/time-topic/2019-10-10-doDispatch.md)
-#### [네번째 모임](documents/time-topic/2019-10-15-RequestMappingHandlerMapping.md)
-#### [다섯번째 모임](documents/time-topic/2019-10-17-RequestMappingHandlerAdapter.md)
+#### [첫번째 모임: Spring MVC 를 왜 공부할까](documents/time-topic/2019-10-01-Why.md)
+#### [두번째 모임: Spring MVC 는 무엇일까](documents/time-topic/2019-10-08-What.md)
+#### [세번째 모임: doDispatch 메서드의 역할은](documents/time-topic/2019-10-10-doDispatch.md)
+#### [네번째 모임: RequestMappingHandlerMapping 의 역할은](documents/time-topic/2019-10-15-RequestMappingHandlerMapping.md)
+#### [다섯번째 모임: RequestMappingHandlerAdapter 의 역할은](documents/time-topic/2019-10-17-RequestMappingHandlerAdapter.md)
 
