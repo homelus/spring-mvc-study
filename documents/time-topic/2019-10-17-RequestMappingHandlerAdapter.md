@@ -25,7 +25,7 @@
     - @InitBinder 를 구현한 메서드를 찾아 캐시한다.
     - RequestBodyAdvice & ResponseBodyAdvice 를 구현한 메서드를 캐시한다.
 
-- [객체 등록](documents/class-config/RequestMappingHandlerAdapter-config.md)
+- [객체 등록](/documents/class-config/RequestMappingHandlerAdapter-config.md)
     - 기본 ArgumentResolvers 를 등록한다.
     - initBinder 용 ArgumentResolvers 를 등록한다.
     - 기본 HandlerMethodReturnValueHandler 를 등록한다.
