@@ -20,7 +20,7 @@
 #### 　　1.1.5. [Processing](DispatcherServlet/1.1.5.%20Processing)
 #### 　　1.1.6. [Interception](DispatcherServlet/1.1.6.%20Interception) By SM
 #### 　　1.1.7. [Exceptions](DispatcherServlet/1.1.7.%20Exceptions) By HH
-#### 　　1.1.8. [View Resolution](DispatcherServlet/1.1.8.%20View%20Resolution) By DH
+#### 　　1.1.8. [View Resolution](DispatcherServlet/1.1.8.%20View%20Resolution.md) By DH
 #### 　　1.1.9. [Locale](DispatcherServlet/1.1.9.%20Locale)
 #### 　　1.1.10. [Themes](DispatcherServlet/1.1.10.%20Themes)
 #### 　　1.1.11. [Multipart Resolver](DispatcherServlet/1.1.11.%20Multipart%20Resolver) By CH
