@@ -17,7 +17,6 @@ import study.mvc.interceptor.TestInterceptor;
 @EnableWebMvc
 @ImportResource("classpath:mvc-config.xml")
 public class MvcConfiguration extends WebMvcConfigurerAdapter {
-
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new TestInterceptor());
