@@ -33,7 +33,7 @@ ServletModelAttributeMethodProcessor<br>
 
 #### ArgResolverContoller 참고
 
-다음과 같은 경우 어떤 ArgumentResolver 를 사용할 것인가?
+### 다음과 같은 경우 어떤 ArgumentResolver 를 사용할 것인가?
 
 1. 기본 타입인 경우 (**primitive, String** 등)
 2. **@RequestParam** 사용하는 경우
