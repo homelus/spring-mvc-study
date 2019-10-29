@@ -22,4 +22,5 @@ public class HomeController {
     public String helloMvc() {
         return "home.jsp";
     }
+
 }

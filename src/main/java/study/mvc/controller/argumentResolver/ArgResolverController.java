@@ -32,7 +32,7 @@ public class ArgResolverController {
      * @see org.springframework.beans.BeanUtils#isSimpleProperty(Class)
      */
     @RequestMapping("/api/t0/tmsUser")
-    public String t1(String name, int age) {
+    public String t0(String name, int age) {
         return "name: " + name + " age: " + age;
     }
 
@@ -130,7 +130,7 @@ public class ArgResolverController {
      * Content-Type 이 application-x-www.form-urlencoded 혹은 multipart/form-data 인 경우
      */
     @RequestMapping("/api/t8/tmsUser")
-    public String t7(@RequestBody MultiValueMap<String, String> data) {
+    public String t8(@RequestBody MultiValueMap<String, String> data) {
         return data.toString();
     }
 
