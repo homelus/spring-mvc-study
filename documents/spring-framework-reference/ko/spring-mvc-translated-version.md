@@ -13,7 +13,7 @@
 
 ### 1.1. [DispatcherServlet](DispatcherServlet/1.1%20DispatcherServlet.md)
 
-#### 　　1.1.1. [Context Hierarchy](DispatcherServlet/1.1.1.%20Context%20Hierarchy.md)
+#### 　　1.1.1. [Context Hierarchy](DispatcherServlet/1.1.1.%20Context%20Hierarchy.md) By YS
 #### 　　1.1.2. [Special Bean Types](DispatcherServlet/1.1.2.%20Special%20Bean%20Types.md) By DH
 #### 　　1.1.3. [Web MVC Config](DispatcherServlet/1.1.3.%20Web%20MVC%20Config.md) By IG
 #### 　　1.1.4. [Servlet Config](DispatcherServlet/1.1.4.%20Servlet%20Config) By GH
@@ -24,4 +24,4 @@
 #### 　　1.1.9. [Locale](DispatcherServlet/1.1.9.%20Locale.md)
 #### 　　1.1.10. [Themes](DispatcherServlet/1.1.10.%20Themes.md)
 #### 　　1.1.11. [Multipart Resolver](DispatcherServlet/1.1.11.%20Multipart%20Resolver.md) By CH
-#### 　　1.1.12. [Logging](DispatcherServlet/1.1.12.%20Logging.md)
+#### 　　1.1.12. [Logging](DispatcherServlet/1.1.12.%20Logging.md) By Ys
