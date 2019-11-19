@@ -26,6 +26,7 @@ public class MvcWebApplicationInitializer implements WebApplicationInitializer {
         dispatcherServlet.setContextConfigLocation(MvcConfiguration.class.getName());
         ServletRegistration.Dynamic dispatcher = context.addServlet("dispatcher", dispatcherServlet);
         dispatcher.setLoadOnStartup(1);
+        dispatcher.setAsyncSupported(true);
         dispatcher.addMapping("/");
     }
 }
