@@ -18,6 +18,9 @@ public class HomeController {
         logger.info("user controller instantiate");
     }
 
+    /**
+     * @see org.springframework.web.servlet.mvc.method.annotation.ViewNameMethodReturnValueHandler
+     */
     @RequestMapping("/app/hello")
     public String helloMvc() {
         return "home.jsp";

@@ -36,6 +36,11 @@ public class ArgResolverController {
         return "name: " + name + " age: " + age;
     }
 
+    @RequestMapping("api/t0_1/tmsUser")
+    public String t0_1(@RequestParam("tmsUser") TmsUser tmsUser) {
+        return tmsUser.toString();
+    }
+
     /**
      * @see org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor
      */

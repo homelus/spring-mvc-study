@@ -18,6 +18,9 @@ public class HomeApiController {
         logger.info("user api controller instantiate");
     }
 
+    /**
+     * @see org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor
+     */
     @RequestMapping("/api/hello")
     public String helloMvc() {
         logger.info("hello api entrance");

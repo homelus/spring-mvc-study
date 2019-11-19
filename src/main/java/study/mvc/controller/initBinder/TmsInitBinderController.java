@@ -26,14 +26,14 @@ public class TmsInitBinderController {
             logger.info("init binder controller instantiate");
         }
 
-        @InitBinder
-        public void initBinder(WebDataBinder dataBinder) {
-            dataBinder.addValidators(new TmsValidator());
-            dataBinder.registerCustomEditor(TmsUser.class, new TmsEditor());
+    @InitBinder
+    public void initBinder(WebDataBinder dataBinder) {
+        dataBinder.addValidators(new TmsValidator());
+        dataBinder.registerCustomEditor(TmsUser.class, new TmsEditor());
 
-            DateFormatter dateFormatter = new DateFormatter();
-            dateFormatter.setPattern("yyyy-MM-dd");
-            dataBinder.addCustomFormatter(dateFormatter, "startDate");
+        DateFormatter dateFormatter = new DateFormatter();
+        dateFormatter.setPattern("yyyy-MM-dd");
+        dataBinder.addCustomFormatter(dateFormatter, "startDate");
     }
 
     @RequestMapping("/api/ib/tmsUser")
