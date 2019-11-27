@@ -47,7 +47,7 @@
 
 #### :evergreen_tree: [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
 
-#### 스터디 마지막 정리(내가 생각하는 Spring MVC)
+#### :thinking: 스터디 마지막 정리(내가 생각하는 Spring MVC)
 [CHH](documents/summary/chh.md), 
 [HCH](documents/summary/hch.md), 
 [HKH](documents/summary/hkh.md), 
