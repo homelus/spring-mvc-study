@@ -7,23 +7,21 @@
 
 #### *[스프링 MVC Reference 번역 정보](documents/spring-framework-reference/ko/spring-mvc-translated-version.md)*
 
-### Study Curriculum
+### Study Database
 
-#### :seedling: [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
-
-#### :herb: [BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
-
-#### :evergreen_tree: [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
-
-###### Servlet 의 초기화
-
-###### DispatcherServlet 의 상속구조
+##### DispatcherServlet 의 상속구조
 - ApplicationContext 구성 및 초기화
     - ApplicationContext 생성: FrameworkServlet#createWebApplicationContext()
     - BeanFactory 생성: AbstractRefreshableApplicationContext#refreshBeanFactory()
     - BeanDefinition 로딩: AnnotationConfigWebApplicationContext:loadBeanDefinitions()
     - BeanPostProcessor 등록: PostProcessorRegistrationDelegate:registerBeanPostProcessors()
     - SingletonBean (전처리)미리 등록: DefaultListableBeanFactory:preInstantiateSingletons()
+
+#### :seedling: [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
+
+#### :herb: [BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
+
+#### :evergreen_tree: [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
 
 ### 클래스 별 설정 데이터 정보
 
@@ -45,8 +43,6 @@
 #### [아홉번 모임: ViewResolver 살펴보기](documents/time-topic/2019-11-21-ViewResolver.md)
 #### [열번째 모임: View 살펴보기](documents/time-topic/2019-11-26-View.md)
 #### [마지막 모임: Spring MVC 는 무엇일까?](documents/time-topic/2019-11-28-What-Spring-again.md)
-
-#### :evergreen_tree: [웹 요청의 처리 과정](documents/description/DispatcherServlet-processing.md)
 
 #### :thinking: 스터디 마지막 정리(내가 생각하는 Spring MVC)
 [CHH](documents/summary/chh.md), 
