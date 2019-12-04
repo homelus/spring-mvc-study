@@ -8,9 +8,7 @@
 
 ##### BeanFactory 생성
 
-
-
-###### HandlerMapping (RequestMappingHandlerMapping)
+###### HandlerMapping (RequestMappingHandlerMapping) 생성
 
 > HandlerMapping 인터페이스의 구체 클래스 중 **RequestMappingHandlerMapping** 는 BeanDefinition 중 Controller 와 RequestMapping Annotation 을 식별하여
 > **MappingRegistry** 에 보관하고 있다가 요청이 들어왔을 때 연결시켜주는 중요한 기능을 수행한다.
@@ -24,12 +22,12 @@
 
 2. ApplicationContext 주입(Aware)
 - Interceptor 설정
-    - BeanFactory 에서 MappedInterceptor 검색 후 추가
+- BeanFactory 에서 MappedInterceptor 검색 후 추가
 
-###### HandlerAdapter (RequestMappingHandlerAdapter)
+###### HandlerAdapter (RequestMappingHandlerAdapter) 
 
-> HandlerAdapter 인터페이스의 구체 클래스 중 **RequestMappingHandlerAdapter** 는 Controller 를 실행하고 결과값을 처리하는  
-> 중요한 기능을 수행한다.
+> HandlerAdapter 인터페이스의 구체 클래스 중 **RequestMappingHandlerAdapter** 는 
+> Controller 를 실행하고 결과값을 처리하는 중요한 기능을 수행한다.
 
 1. 생성자
 - HttpMessageConverter 추가
