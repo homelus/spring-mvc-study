@@ -28,12 +28,15 @@ Controller 메서드를 실행할 adapter 를 검색합니다.
 
 
 
-#### Controller**
+#### Controller
+비즈니스 로직을 이용해 처리합니다.
 
 #### ReturnValueHandler
+컨트롤러에서 반환받은 결과값을 처리합니다.
 
 #### LocaleResolver
 
 #### ViewResolver
+결과값을 이용해 클라이언트에게 렌더링 할 view 를 선택합니다.
 
 #### HandlerExceptionResolver
