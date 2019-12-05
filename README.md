@@ -17,6 +17,10 @@
     - BeanPostProcessor 등록: PostProcessorRegistrationDelegate:registerBeanPostProcessors()
     - SingletonBean (전처리)미리 등록: DefaultListableBeanFactory:preInstantiateSingletons()
 
+> ApplicationContext 를 생성(초기화)하는 첫 단계는 DispatcherServlet 의 부모 클래스인 HttpServletBean 의 init() 메서드이다.
+> 이 클래스는 Servlet Spec 에 따라 init 메서드를 호출하는데 이때 FrameworkServlet 클래스의 initServletBean() 메서드를 실행한다.
+> 이 부분을 보면 ApplicationContext 의 시작지점을 알 수 있다.
+
 #### :seedling: [DispatcherServlet 의 초기화 과정](documents/description/DispatcherServlet-initiation.md)
 
 #### :herb: [BeanFactory 의 초기화 과정](documents/description/BeanFactory-initiation.md)
