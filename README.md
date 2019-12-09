@@ -9,7 +9,15 @@
 
 ### Study Database
 
-##### DispatcherServlet 의 상속구조
+##### DispatcherServlet 의 구조
+- Servlet 상속 구조
+    - [Spring Spec] DispatcherServlet : doDispatcher 메서드를 이용해 web request 를 처리하는 중앙 처리 클래스
+    - [Spring Spec] FrameworkServlet : 서블릿 웹 프레임워크의 기본 기능을 제공하고 do* 메서드를 다시 doService 메서드로 모아주는 추상클래스
+    - [Spring Spec] HttpServletBean : init 메서드를 재정의하며 설정 기능을 제공하는 추상 클래스
+    - [Servlet Spec] HttpServlet : service 메서드로의 요청을 do* 메서드로 전달하는 추상클래스
+    - [Servlet Spec] GenericServlet : ServletConfig 의 설정을 담당하는 추상클래스
+    - [Servlet Spec] Servlet(interface) : Servlet 의 생명주기를 제공하는 인터페이스 (init, service, destroy)
+
 - ApplicationContext 구성 및 초기화
     - ApplicationContext 생성: FrameworkServlet#createWebApplicationContext()
     - BeanFactory 생성: AbstractRefreshableApplicationContext#refreshBeanFactory()
